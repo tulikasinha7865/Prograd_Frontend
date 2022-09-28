@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Eelements</title>
+    <style>
+        body{
+            font-family:Proxima Nova;
+            background-color: beige;
+        }
+        h2{
+            text-align: center;
+        }
+        form{
+            border: 2px solid #000;
+            border-radius: 5px;
+            box-shadow: 5px 10px #888888;
+            padding:14px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-control,.form-select
+        {
+            padding:8px;
+            width:90%;
+        }
+        fieldset
+        {
+            width:90%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Feedback Form</h2>
+        </div>
+        <div>
+        <form action="/">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name: </label><br/>
+                    <input type="text" class="form-control" placeholder="Please enter your first name.">
+                </div>
+                <br/>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name: </label><br/>
+                    <input type="text" class="form-control" placeholder="Please enter your last name.">
+                </div>
+                <br/>
+                <div class="mb-3">
+                    <label for="emailAddress" class="form-label">Email address</label><br/>
+                    <input type="email" class="form-control" placeholder="Please enter your Email Id. Eg: name@example.com">
+                </div>
+                <br/>
+                <div class="mb-3">
+                    <fieldset>
+                    <legend>Select the rating: </legend>
+                    <input type="radio" id="1_Star" name="rating" value="1_Star">
+                    <label for="1_Star">1 Star</label>
+                    <input type="radio" id="2_Star" name="rating" value="2_Star">
+                    <label for="2_Star">2 Star</label>
+                    <input type="radio" id="3_Star" name="rating" value="3_Star">
+                    <label for="3_Star">3 Star</label>
+                    <input type="radio" id="4_Star" name="rating" value="4_Star">
+                    <label for="4_Star">4 Star</label>
+                    <input type="radio" id="5_Star" name="rating" value="5_Star">
+                    <label for="5_Star">5 Star</label>
+                    </fieldset>
+                </div>
+                <br/>
+                  <div class="mb-3">
+                    <label for="topic" class="form-label">Choose Topic: </label><br/>
+                    <select name="topic" id="topic" class="form-select">
+                        <option selected  value="">Choose from given options</option>
+                        <option value="HTML5">HTML5</option>
+                        <option value="CSS3">CSS3</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="CSS3">Java</option>
+                      </select>
+                  </div>
+                  <br/>
+                  <div class="mb-3">
+                    <label for="feed" class="form-label">Please select the options which suits you best: </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="feed1" value="Easy to understand the topic.">
+                        <label class="form-check-label" for="feed1">
+                          Easy to understand the topic.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="feed2" value="Pace of teaching is good.">
+                        <label class="form-check-label" for="feed2">
+                          Pace of teaching is good.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="feed3" value="Classes are involving and practical.">
+                        <label class="form-check-label" for="feed3">
+                          Classes are involving and practical.
+                        </label>
+                    </div>                     
+                  </div>
+                  <br/>
+                  <div class="mb-3">
+                    <label for="feedack" class="form-label">Feedack</label><br/>
+                    <textarea class="form-control" rows="4" placeholder="Please give your feedack!!"></textarea>
+                  </div>
+                  <br/>
+                  <button type="button" class="btn btn-primary" style="margin-left:45%;">Submit</button>
+        </form>
+        </div>
+        <br/><br/><br/>
+    </div>
+</body>
+</html>
