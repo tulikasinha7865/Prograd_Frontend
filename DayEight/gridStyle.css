@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  display: grid;
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+
+.container div {
+  padding: 5px;
+  font-size: 30px;
+}
+.row1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #3973AC;
+}
+.row2{
+    width: 30vw;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.row3{
+    width:65vw;
+}
+.row4{
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.row5{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.row3{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.row6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.row7{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;   
+  }
+nav li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.row2 img{
+    width: 30vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.row3{
+    position: relative;
+    color: #FFFFFF;
+    text-align: center;
+} 
+.row3 img{ 
+    opacity:0.8;
+}  
+.center {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+.center p{
+    font-size: 20px;
+    width: 50%;
+    padding-top: 10px;
+    margin-left: 25%
+}
+.center h1{
+    font-size: 28px;
+    top:5%;
+}
+.center button{
+    margin-top:3%;
+    padding:15px;
+    width: 20%;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: #FFFFFF;
+}
+.row4 img{
+    width: 25vw;
+    height: 50vh;
+    margin-top: 50px;
+    margin-right:50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.row5 p{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.row6{
+    height: 50vh;
+    display: flex;
+    padding: 5px;
+    gap: 15px;
+    text-align: center;
+    
+}
+.row6 img{
+    width: 15vw;
+    height: 40vh;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 20%;
+} 
+.details{
+    padding: 2px 16px;
+}
+.row7{ 
+    background-color:#3973AC;
+    height: 60vh;
+    text-align: center;
+    color: #FFFFFF;
+} 
+.row7 h1{
+    font-size: 55px;
+    width:30%;
+    margin: auto;
+}
+.row7 p{
+    font-size: 20px;
+    width:40%;
+    margin: auto;
+}
