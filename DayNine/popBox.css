@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #E8BCF0;
+    text-align: center;
+}
+header{
+    height: 8vh;
+    background-color: #DA8EE7;
+    text-align: center;
+    margin: 5px;
+
+}
+h1{
+    background-color: #DA8EE7;
+    color: #FFFFFF; 
+    padding: 5px;
+}
+button{
+    background-color: #7600BC;
+    color: #FFFFFF;
+    width:15%;
+    padding: 5px;
+    font-size: 20px;
+}
