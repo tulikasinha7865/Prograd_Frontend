@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="changeText.css"/>
+    <script src="changeText.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CHANGE CONTENT ON BUTTON CLICK</h1>
+        </header>
+        <button type="button" onclick="light(0)" style="width:10%;float:right;margin-right:10px;">LIGHT MODE</button>
+        <button type="button" onclick="light(1)" style="width:10%;float:right;margin-right:15px;">DARK MODE</button>
+        <br/><br/>
+        <section>
+            <div class="content" id="content1">
+                <h1>WELCOME TO JAVASCRIPT</h1>
+                <br/><br/>
+                <ul id="text">
+                    <li>JavaScript is the world's most popular programming language.</li>
+
+                    <li>JavaScript is the programming language of the Web.</li>
+                        
+                    <li>JavaScript is easy to learn.</li>
+                        
+                    <li>This tutorial will teach you JavaScript from basic to advanced.</li>
+                </ul>
+                <br/><br/>
+                <button onclick="changeText()" style="background-color:#4C00BC;">CLICK TO KNOW MORE</button>
+            </div>
+            <div class="img-grp" id="img">
+                <h1>CHANGE IMAGE ON CLICK</h1>
+                <br/><br/>
+                <img id="myImg" src ="https://images.unsplash.com/photo-1533119408463-b0f487583ff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" style="width:20vw;height:30vh;"/>
+                <br/><br/>
+                <button onclick="changeImage()" style="background-color:#4C00BC;">CHANGE IMAGE</button>
+            </div>
+        </section>
+        <br/><br/>
+    </div>
+</body>
+</html>
