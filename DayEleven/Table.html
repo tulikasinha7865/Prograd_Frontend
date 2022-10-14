@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Table.css"/>
+    <script src="Table.js"></script>
+</head>
+<body>
+    <!--Create a webpage containing the following
+    1. Create a JS function to add rows to an existing table
+    2. Create a JS function that accepts row number and column number(to identify a paticular cell) and a string to update the content of that cell
+    3. Create a JS function that creates a table based on row, column numbers from the user.-->
+    <div class="container">
+        <header>
+            <h1>TABLE MANIPULATION</h1>
+        </header>
+        <div class="content">
+            <caption>ADDING ROW AT END OF TABLE</caption>
+            <table style="width:100%" id="myTable">
+                <tr>
+                    <th>S No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Roll</th>
+                    <th>Mobile Number</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>   
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br/>
+            <input type="button" onclick="addRow()" value="INSERT ROW" class="button"> 
+        </div>
+
+        <div class="content">
+            <caption>CHANGING CONTENT OF TABLE</caption>
+            <table style="width:100%" id="myTable1">
+                <tr>
+                    <th>S No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Roll</th>
+                    <th>Mobile Number</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Tulika</td>
+                    <td>Sinha</td>
+                    <td>30000218007</td>
+                    <td>9987652345</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Nutan</td>
+                    <td>Hotwani</td>
+                    <td>30000218008</td>
+                    <td>8765432123</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Atul</td>
+                    <td>Kumar</td>
+                    <td>30000218009</td>
+                    <td>7700654231</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Nishant</td>
+                    <td>Kumar</td>
+                    <td>30000218010</td>
+                    <td>6845236711</td>   
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Vinit</td>
+                    <td>Kumar</td>
+                    <td>30000218011</td>
+                    <td>8734561234</td>
+                </tr>
+            </table>
+            <br/>
+            <input type="button" onclick="changeContent()" value="CHANGE CONTENT" class="button"> 
+        </div>
+
+        <div class="content">
+            <caption>ADDING TABLE</caption>
+            <table style="width:100%" id="myTable2">
+            </table>
+            <br/>
+            <input type="button" onclick="createTable()" value="ADD TABLE" class="button"> 
+        </div>
+        <br/><br/><br/>
+    </div>
+</body>
+</html>

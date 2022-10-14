@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DOM.css"/>
+</head>
+<body>
+    <!--Create a webpage containing the following
+    1.Use of all 6 DOM methods
+    2.Create any HTML elements using JS and add it to an existing element
+    3. Use of eventListners
+    4. Use of setTimeout()-->
+    <div class="container">
+        <header>
+            <h1>DOM MANIPULATION</h1>
+        </header>
+        <div class="content" id="section1">
+            <h2 style="background-color:#FFFFFF;">The setInterval() and clearInterval() Methods</h2>
+            <br/>
+            <button onclick="stopColor()">Stop Toggling</button>
+        </div>
+        <div class="content" id="section2">
+            <form>
+                <h2 id="demo"></h2>
+                <br/>
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name: </label><br/>
+                    <input type="text" class="form-control" placeholder="Please enter your first name.">
+                </div>
+                <br/>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name: </label><br/>
+                    <input type="text" class="form-control" placeholder="Please enter your last name.">
+                </div>
+                <br/>
+                <div class="mb-3">
+                    <label for="emailAddress" class="form-label">Email address</label><br/>
+                    <input type="email" class="form-control" placeholder="Please enter your Email Id. Eg: name@example.com">
+                </div>
+                <br/>
+                <button id="myBtn">SUBMIT</button>
+            </form>
+        </div>
+        <div class="content" id="section3">
+            <p id="tree">Query Selector Example Using Paragraph Tag</p>
+            <br/>
+            <h2>Query Selector All Example</h2>
+            <br/><br/>
+            <p>How many elements with class "content" in this document:</p>
+            <p id="count"></p>
+        </div>
+        <br><br/>
+    </div>
+    <!--script>
+        document.getElementById("myBtn").addEventListener("click", function() {
+          alert("Are you sure you want to Submit?");
+        });
+    </script-->
+    <script src="DOM.js"></script>
+</body>
+</html>
